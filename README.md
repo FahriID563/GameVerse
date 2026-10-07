@@ -3,9 +3,9 @@
 ## Informasi Mahasiswa dan Proyek
 
 - **Nama Project**: GameVerse (Aplikasi Katalog Video Game)
-- **Nama**: [Nama Mahasiswa]
-- **NIM**: [NIM]
-- **Shift Praktikum**: [Shift Praktikum]
+- **Nama**: MHD FAHRI IRFANDI DEWANTARA
+- **NIM**: H1D024012
+- **Shift Praktikum**: Shift F
 
 ---
 
