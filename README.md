@@ -1,87 +1,110 @@
-# 🎮 GameVerse - Next-Gen Video Game Catalog
+# GameVerse - Aplikasi Katalog Video Game
 
-**GameVerse** is a modern Android application built using **Jetpack Compose** and **Kotlin**, powered by the **RAWG Video Games Database API**. It features a futuristic **Cyberpunk/Neon** design system, real-time search, multi-criteria filtering, and detailed video game insights.
+## Informasi Mahasiswa dan Proyek
 
----
-
-## ✨ Features
-
-- 🌌 **Futuristic Cyberpunk UI**: Sleek neon-themed design system (`CyberColors`) with glowing cards, custom radial gradients, and fluid animations.
-- 🔍 **Real-Time Search Bar**: Dynamic game title search with non-intrusive content loading indicators and keyboard state preservation.
-- 🎛️ **Multi-Criteria Filtering (`Search by filters`)**:
-  - **Genre Filter**: Action, RPG, Shooter, Adventure, Indie, Strategy, Racing, Sports, etc.
-  - **Minimum Rating**: ★ 4.5+, ★ 4.0+, ★ 3.5+.
-  - **Release Year**: Filter games by launch year (2024, 2023, 2022, 2021, 2020, 2019).
-  - **Reset Filters**: One-tap action to restore full catalog parameters.
-- 📱 **Interactive Game Details**: View full game descriptions, ratings, release dates, platforms (PC, PlayStation, Xbox, Switch, etc.), genres, and Metacritic scores.
-- ⚡ **Asynchronous State Management**: Powered by Kotlin Coroutines and `StateFlow` for smooth state rendering (`Loading`, `Success`, `Error`).
+- **Nama Project**: GameVerse (Aplikasi Katalog Video Game)
+- **Nama**: [Nama Mahasiswa]
+- **NIM**: [NIM]
+- **Shift Praktikum**: [Shift Praktikum]
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Deskripsi Proyek
 
-- **Language**: [Kotlin](https://kotlinlang.org/)
-- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose) (Material 3)
-- **Architecture Pattern**: MVVM (Model-View-ViewModel)
-- **Networking**: [Retrofit 2](https://square.github.io/retrofit/) & Gson Converter
-- **Image Loading**: [Coil](https://coil-kt.github.io/coil/) for Compose
-- **Async & Reactive Data**: Kotlin Coroutines & `StateFlow`
-- **Navigation**: Jetpack Navigation Compose (`NavHost`)
-- **API Source**: [RAWG Video Games Database API](https://rawg.io/apidocs)
+GameVerse adalah aplikasi Android berbasis Kotlin dan Jetpack Compose yang dikembangkan untuk menampilkan katalog video game secara interaktif. Aplikasi ini terhubung langsung dengan REST API publik dari RAWG Video Games Database untuk menyajikan informasi game secara cepat, responsif, dan dinamis.
+
+Aplikasi ini mengusung desain tema kustom Cyberpunk/Neon dengan antarmuka yang bersih, mudah digunakan, serta mendukung fitur pencarian dan penyaringan data (filtering) game berdasarkan berbagai kriteria.
 
 ---
 
-## 📂 Project Structure
+## Fitur Utama Aplikasi
+
+1. **Katalog Game Interaktif**
+   - Menampilkan daftar video game dalam bentuk grid.
+   - Dilengkapi informasi judul, gambar latar belakang, rating, tahun rilis, dan kategori genre.
+
+2. **Pencarian Game Real-Time**
+   - Kolom pencarian game berbasis input teks dinamis.
+   - Indikator pemuatan data (*loading*) yang hanya muncul pada area konten tanpa mengganggu status input teks atau papan ketik (*soft keyboard*).
+
+3. **Menu Penyaringan Data (Search by filters)**
+   - **Genre**: Menyaring game berdasarkan kategori seperti Action, RPG, Shooter, Adventure, Indie, Strategy, Racing, Sports, dan lainnya.
+   - **Minimal Rating**: Menyaring game berdasarkan rating minimum (misalnya 4.5+, 4.0+, 3.5+).
+   - **Tahun Rilisan**: Menyaring game berdasarkan tahun peluncuran (2024, 2023, 2022, 2021, 2020, 2019).
+   - **Reset Filter**: Tombol untuk mengembalikan daftar game ke setelan awal.
+
+4. **Halaman Detail Game**
+   - Menyajikan informasi lengkap mengenai game yang dipilih.
+   - Menampilkan deskripsi teks lengkap, tanggal rilis, rating, daftar platform yang didukung (PC, PlayStation, Xbox, Nintendo Switch, dll.), genre, dan skor Metacritic.
+
+---
+
+## Teknologi dan Arsitektur
+
+- **Bahasa Pemrograman**: Kotlin
+- **UI Framework**: Jetpack Compose (Material 3)
+- **Pola Arsitektur**: MVVM (Model-View-ViewModel)
+- **Networking**: Retrofit 2 & Gson Converter
+- **Image Loading**: Coil Compose
+- **Asynchronous & Reactive Stream**: Kotlin Coroutines & StateFlow
+- **Navigasi**: Jetpack Navigation Compose
+- **Penyedia Data API**: RAWG Video Games Database API
+
+---
+
+## Struktur Direktori Proyek
 
 ```text
 com.pemmob.videogame/
 ├── data/
-│   ├── model/         # DTO Data Classes (GameDto, GameDetailDto, GenreDto, etc.)
-│   ├── remote/        # Retrofit API Service & ApiClient
-│   └── repository/    # GameRepository for fetching, filtering, and API mapping
+│   ├── model/         # Data Transfer Object (GameDto, GameDetailDto, GenreDto, dll.)
+│   ├── remote/        # Interface Retrofit API Service & ApiClient
+│   └── repository/    # GameRepository untuk mengambil dan menyaring data dari API
 ├── ui/
-│   ├── components/    # Reusable UI views (LoadingView, ErrorView, LoadingGameCard)
-│   ├── detail/        # DetailScreen & DetailViewModel
-│   ├── home/          # HomeScreen, HomeViewModel, HomeUiState, FilterState
-│   ├── navigation/    # AppNavHost navigation setup
-│   └── theme/         # CyberColors, Color, Theme, Type
-└── MainActivity.kt    # Application entry point
+│   ├── components/    # Komponen UI umum (LoadingView, ErrorView, LoadingGameCard)
+│   ├── detail/        # Screen dan ViewModel untuk Halaman Detail Game
+│   ├── home/          # Screen, ViewModel, UiState, dan FilterState untuk Halaman Utama
+│   ├── navigation/    # Pengaturan rute navigasi aplikasi (AppNavHost)
+│   └── theme/         # Sistem tema warna dan tipografi (CyberColors, Theme, Type)
+└── MainActivity.kt    # Entry point utama aplikasi Android
 ```
 
 ---
 
-## 🚀 Getting Started
+## Petunjuk Penggunaan dan Cara Menjalankan
 
-### Prerequisites
+### Prasyarat
 
-- **Android Studio**: Ladybug / Hedgehog or newer (2024+)
-- **JDK Version**: Java 17 / JDK 17+
-- **Minimum SDK**: Android 7.0 (API level 24)
-- **Target SDK**: Android 14 (API level 34+)
+- Android Studio versi terkini (Ladybug / Hedgehog atau yang lebih baru)
+- Java Development Kit (JDK 17+)
+- Minimum Android SDK: API Level 24 (Android 7.0)
+- Target Android SDK: API Level 34 (Android 14)
 
-### Installation & Setup
+### Langkah-langkah Jalankan Proyek
 
-1. **Clone the Repository**:
+1. **Kloning Repository Git**:
    ```bash
    git clone https://github.com/FahriID563/GameVerse.git
    cd GameVerse
    ```
 
-2. **Obtain a RAWG API Key**:
-   - Register for a free API key at [RAWG.io API Docs](https://rawg.io/apidocs).
+2. **Mendapatkan API Key RAWG**:
+   - Dapatkan API Key gratis dengan mendaftar pada situs [RAWG API Docs](https://rawg.io/apidocs).
 
-3. **Configure API Key**:
-   - Open `local.properties` in the root folder and add:
+3. **Konfigurasi API Key**:
+   - Buka file `local.properties` pada direktori utama proyek.
+   - Tambahkan baris berikut dan masukkan API Key Anda:
      ```properties
-     RAWG_API_KEY="your_actual_rawg_api_key_here"
+     RAWG_API_KEY="masukkan_api_key_rawg_anda_di_sini"
      ```
 
-4. **Build and Run**:
-   - Sync the Gradle project in Android Studio.
-   - Run the app on an Android Emulator or connected physical device.
+4. **Kompilasi dan Jalankan**:
+   - Buka proyek di Android Studio.
+   - Lakukan Gradle Sync.
+   - Jalankan aplikasi pada Emulator Android atau Perangkat Fisik.
 
 ---
 
-## 📜 License
+## Lisensi
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Proyek ini dibuat untuk memenuhi tugas praktikum pemrograman perangkat bergerak.
