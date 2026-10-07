@@ -43,7 +43,8 @@ Aplikasi ini mengusung desain tema kustom Cyberpunk/Neon dengan antarmuka yang b
 
 | Halaman Utama & Katalog | Fitur Pencarian & Filter | Halaman Detail Game |
 | :---: | :---: | :---: |
-| ![Halaman Utama](AQ.Ab8RN6JfHp3iQeH83ktR5ijo2-8r1bcciOb8Tu2QwHhmCuV3_g) | ![Search and Filter](https://github.com/user-attachments/assets/cf1ef9fd-e16c-4e04-ac6e-021b40180ff2) | ![Detail Game](https://github.com/user-attachments/assets/bc2f83d9-3994-419d-98dd-6f24dce1b27d) |
+| ![Halaman Utama](<img width="397" height="874" alt="image" src="https://github.com/user-attachments/assets/ae1a7c23-5941-4714-910f-381d43bbcc02" />
+) | ![Search and Filter](https://github.com/user-attachments/assets/cf1ef9fd-e16c-4e04-ac6e-021b40180ff2) | ![Detail Game](https://github.com/user-attachments/assets/bc2f83d9-3994-419d-98dd-6f24dce1b27d) |
 | *Tampilan Utama Katalog* | *Fitur Pencarian & Filter* | *Tampilan Detail Game* |
 
 > *Catatan: Letakkan file gambar tangkapan layar pada folder `screenshots/` dengan nama file `home_screen.png`, `search_filter.png`, dan `detail_screen.png`.*
