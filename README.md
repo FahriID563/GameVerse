@@ -39,6 +39,17 @@ Aplikasi ini mengusung desain tema kustom Cyberpunk/Neon dengan antarmuka yang b
 
 ---
 
+## Tangkapan Layar Aplikasi (Screenshots)
+
+| Halaman Utama & Katalog | Fitur Pencarian & Filter | Halaman Detail Game |
+| :---: | :---: | :---: |
+| ![Halaman Utama](screenshots/home_screen.png) | ![Search and Filter](screenshots/search_filter.png) | ![Detail Game](screenshots/detail_screen.png) |
+| *Tampilan Utama Katalog* | *Fitur Pencarian & Filter* | *Tampilan Detail Game* |
+
+> *Catatan: Letakkan file gambar tangkapan layar pada folder `screenshots/` dengan nama file `home_screen.png`, `search_filter.png`, dan `detail_screen.png`.*
+
+---
+
 ## Teknologi dan Arsitektur
 
 - **Bahasa Pemrograman**: Kotlin
