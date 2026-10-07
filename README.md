@@ -46,9 +46,6 @@ Aplikasi ini mengusung desain tema kustom Cyberpunk/Neon dengan antarmuka yang b
 | ![Halaman Utama](https://github.com/user-attachments/assets/ae1a7c23-5941-4714-910f-381d43bbcc02) | ![Fitur Pencarian & Filter](https://github.com/user-attachments/assets/cf1ef9fd-e16c-4e04-ac6e-021b40180ff2) | ![Halaman Detail Game](https://github.com/user-attachments/assets/bc2f83d9-3994-419d-98dd-6f24dce1b27d) |
 | *Tampilan Utama Katalog* | *Fitur Pencarian & Filter* | *Tampilan Detail Game* |
 
-> *Catatan: Letakkan file gambar tangkapan layar pada folder `screenshots/` dengan nama file `home_screen.png`, `search_filter.png`, dan `detail_screen.png`.*
-
----
 
 ## Teknologi dan Arsitektur
 
@@ -113,9 +110,3 @@ com.pemmob.videogame/
    - Buka proyek di Android Studio.
    - Lakukan Gradle Sync.
    - Jalankan aplikasi pada Emulator Android atau Perangkat Fisik.
-
----
-
-## Lisensi
-
-Proyek ini dibuat untuk memenuhi tugas praktikum pemrograman perangkat bergerak.
